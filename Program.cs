@@ -183,7 +183,7 @@ namespace Oop
             cir.Draw();
 
             Console.WriteLine("***** Fun with Polymorphism *****\n");
-            // Создать массив совместимых c Shape объектов.
+      
             ShapeAbstractMethod[] myShapes = {new HexagonAbstractMethod(), new CircleAbstractMethod(), new HexagonAbstractMethod("Mick" ) ,
             new CircleAbstractMethod("Beth"), new CircleAbstractMethod("Linda" )};
             
