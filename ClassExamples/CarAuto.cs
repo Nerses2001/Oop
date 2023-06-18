@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Oop.ClassExamples
 {
-    class Car
+    class CarAuto
     {
         // 'State' of the Car object.
         public string petName;
