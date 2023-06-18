@@ -1,5 +1,6 @@
 ﻿using System;
 using Oop.PrinciplesOop.Encapsulation;
+using Oop.PrinciplesOop.Encapsulation.Delegation;
 
 namespace Oop.PrinciplesOop.Inheritance
 {
@@ -15,6 +16,16 @@ namespace Oop.PrinciplesOop.Inheritance
             private float  _currPay;
             private int _empAge;
             private int _ssn;
+            protected BenefitPackage empBenefits = new BenefitPackage();
+            
+
+            public double GetBenefitCost()
+            {
+                return empBenefits.ComputerPayDeduction();
+            }
+
+            public BenefitPackage Benefits { get; set; }
+
 
             public int SocialSecurityNumber { get; set; }
 
